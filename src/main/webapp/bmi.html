@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="DaniValidChecker.js"></script>
+<script type="text/javascript" src="bmi_JS.js"></script>
+<!-- 유효성 검사. -->
+</head>
+<body>
+<!--
+  table + form
+  BMI 검사
+  필요한 정보 + 사진
+ -->
+ 
+ 
+ <form action="bmi_SV.jsp" name="bmiForm" enctype="multipart/form-data" method="post" onsubmit="return bmiCheck();">
+ <table id="bmiTbl">
+ <tr>
+ <th colspan="2"> BMI검사</th>
+ </tr>
+ <tr>
+ <td class="td1"> 이름</td>
+ <td><input name="name" placeholder="필수" class="textType" maxlength="10" autofocus="autofocus" autocomplete="off">
+ </td>
+ </tr>
+ <tr>
+ <td class="td1">키</td>
+ <td><input name="height" placeholder="cm" class="textType" autocomplete="off" >
+ </td>
+ </tr>
+ <tr>
+ <td class="td1">몸무게</td>
+ <td><input name="weight" placeholder="kg" class="textType" autocomplete="off">
+ </td>
+ </tr>
+ <tr>
+ <td class="td1">사진</td>
+ <td><input name="photo" type="file" class="photoType" id="photo">
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" align="center"><button>계산하기</button>
+ </td>
+ </tr>
+</table>
+</form>
+ 
+ 
+ 
+</body>
+</html>
